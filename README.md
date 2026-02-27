@@ -10,7 +10,10 @@ Each implementation has been verified as part of a [RISC-V Core](https://github.
 
 ## 🧩 Versions
 
-* [2 Bit Saturating Counter BTB BPU](2_bit_saturating_counter/) – It uses a 2 bit saturating counter for branch prediction. There are 4 states: Weak/Strong Taken and Weak/Strong Not Taken.
+* [1 Bit Saturating BTB BPU](1_bit_saturating_btb/) – It uses a 1 bit counter for branch prediction. There are 2 states: Taken or Not Taken.
+The BTB used is a 2-way set assosciative BTB with LRU replacement policy. The size is configurable by parameter N in top module.
+
+* [2 Bit Saturating BTB BPU](2_bit_saturating_btb/) – It uses a 2 bit saturating counter for branch prediction. There are 4 states: Weak/Strong Taken and Weak/Strong Not Taken.
 The BTB used is a 2-way set assosciative BTB with LRU replacement policy. The size is configurable by parameter N in top module.
 
 
